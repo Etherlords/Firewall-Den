@@ -13,6 +13,11 @@ syncMaster {
     slavesReposDir file("../slaves-repos");
     registerRepo(
             {
+                repository = 'https://github.com/chaos-adept/GradleFx.git'
+                name = 'gradlefx'
+                branch = 'feature-asc2'
+            },
+            {
                 repository = 'https://github.com/gNikro/away3d-core-fp11.git'
                 name = 'away3d-core-fp11'
                 branch = 'fix_stereoview_bug'
