@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.chaoslabgames:sync-master-plugin:0.1'
+    }
+}
+
+apply plugin: 'sync-master'
+
+syncMaster {
+    slavesReposDir file("../slaves-repos");
+    registerRepo(
+            {
+                repository = 'https://github.com/chaos-adept/labaratory.git'
+                name = 'labaratory'
+                branch = 'master'
+            },
+            {
+                repository = 'https://github.com/chaos-adept/devil-train.git'
+                name = 'dev-train'
+                branch = 'master'
+            },
+            {
+                repository = 'D:/entherlords/testrepo'
+                name = 'testrepo'
+                branch = 'master'
+            })
+
+}
