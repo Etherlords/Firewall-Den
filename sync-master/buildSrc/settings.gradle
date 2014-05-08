@@ -1,1 +1,1 @@
-import 'sync-master-plugin'
+include 'sync-master-plugin'

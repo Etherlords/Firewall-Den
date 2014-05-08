@@ -1,0 +1,3 @@
+[submodule "sync-master/buildSrc/sync-master-plugin"]
+	path = sync-master/buildSrc/sync-master-plugin
+	url = https://github.com/chaos-adept/sync-master-plugin.git
