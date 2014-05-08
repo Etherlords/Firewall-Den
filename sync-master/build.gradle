@@ -2,15 +2,14 @@ buildscript {
     repositories {
         jcenter()
     }
-
-    dependencies {
-        classpath 'com.chaoslabgames:sync-master-plugin:0.1'
-    }
 }
 
 apply plugin: 'sync-master'
 
 syncMaster {
+	username System.properties['GIT_USERNAME']
+	password System.properties['GIT_PASSWORD']
+	
     slavesReposDir file("../slaves-repos");
     registerRepo(
             {

@@ -33,6 +33,7 @@ bin
 bin-debug
 bin-release
 
+
 #Temp#
 Temp
 **/Temp/*.*
@@ -60,6 +61,8 @@ obj
 **/obj/*.*
 build
 **/build/*.*
+out
+**/out/*.*
 
 
 
